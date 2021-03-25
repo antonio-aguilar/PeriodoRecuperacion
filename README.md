@@ -1,5 +1,6 @@
 # PeriodoRecuperacion
 Ejercicios del Periodo de Recuperación de DWES
 
-- RA1_ProcesoDePeticiónWeb.pdf
-- RA1_PeticiónWebAmazon.pdf
+- Archivo RA1_ProcesoDePeticiónWeb.pdf
+- Archivo RA1_PeticiónWebAmazon.pdf
+- Carpeta Funciones
