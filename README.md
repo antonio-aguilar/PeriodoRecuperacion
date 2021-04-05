@@ -1,4 +1,4 @@
-# PeriodoRecuperacion
+# Periodo de Recuperación
 Ejercicios del Periodo de Recuperación de DWES (Desarrollo Web en Entorno Servidor).
 
 - Archivo RA1_ProcesoDePeticiónWeb.pdf
