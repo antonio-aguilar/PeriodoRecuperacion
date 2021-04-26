@@ -24,5 +24,5 @@ if ($valor && $columnas) {
 // Mostrar los primos en una tabla de 5 columnas
 tabla($lista, $columnas);
 
-// Para probarlo por ejemplo seria: http://localhost/DESER/Periodo_Recuperacion/Funciones/Ejer9/FuncionesRA2-3_9.php?numero=50&columnas=10
+// Para probarlo por ejemplo seria: http://localhost/DESER/Periodo_Recuperacion/Funciones/Ejer9/FuncionesRA2-3_9.php?numero=500&columnas=10
 ?>
