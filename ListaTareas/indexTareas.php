@@ -39,7 +39,7 @@ if (isset($_GET["mostrar_completadas"]) == 1) {
 }
 
 // Enlace para mostrar las tareas completadas
-echo "<br /> <a href=\"http://localhost/DESER/Periodo_Recuperacion/ListaTareas/indexTareas.php?mostrar_completadas=1\"> Mostrar Completadas </a>";
+echo "<br /> <a href=\"indexTareas.php?mostrar_completadas=1\"> Mostrar Completadas </a>";
 
 /* Pie html de la web */
 pie();
