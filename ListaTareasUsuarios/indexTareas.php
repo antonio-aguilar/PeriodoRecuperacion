@@ -43,7 +43,7 @@ if (isset($_SESSION['usuario'])) {
 // Incluir algunos usuarios de prueba con el siguiente archivo php
 //include "carga.php";
 
-// Listar Usuarios, si esta logueado saldra el campo de la contraseña de lo contrario no Ejercicio
+// Listar Usuarios, si esta logueado saldra el campo de la contraseña de lo contrario no
 if (isset($_SESSION['usuario'])) {
     listarUsuarios($bd);
 } else {
