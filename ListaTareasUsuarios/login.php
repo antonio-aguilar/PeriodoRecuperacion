@@ -4,6 +4,10 @@ session_start();
 // Archivos requeridos en la web
 require_once "funciones.php";
 
+if (isset($_SESSION['usuario'])) {
+    header("Location: indexTareas.php");
+}
+
 // Encabezado de la web
 encabezado();
 
