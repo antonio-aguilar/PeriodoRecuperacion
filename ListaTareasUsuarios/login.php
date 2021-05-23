@@ -4,6 +4,7 @@ session_start();
 // Archivos requeridos en la web
 require_once "funciones.php";
 
+// Si el usuario ya esta logueado lo lleva al index del tiron
 if (isset($_SESSION['usuario'])) {
     header("Location: indexTareas.php");
 }
