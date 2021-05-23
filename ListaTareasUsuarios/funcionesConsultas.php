@@ -217,8 +217,4 @@ function listarUsuarios1($bd) {
   echo "</table>";
 }
 
-/* ----------------------------------- Funciones de prueba ----------------------------------- */
-
-
-
 ?>
