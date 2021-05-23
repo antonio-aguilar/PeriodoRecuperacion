@@ -1,4 +1,8 @@
 <?php
+
+// Llamada a archivos requeridos
+require_once "bd.php";
+
 /* Insercion de datos de usuarios */
 
 // INSERT INTO usuarios (usuario,nombre,password_hash) SELECT 'antonio','antonioaguilar','admin' FROM usuarios WHERE NOT EXISTS(SELECT * FROM usuarios WHERE usuarios.usuario='antonio') 
