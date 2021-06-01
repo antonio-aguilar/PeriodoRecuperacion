@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Tareas</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="indexTareas.php">Tareas pendientes</a></h1>
+    </header>
+    
+    <div id="container">
+        <div id="main">
+                <ul id="listaTareas">
+                </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © Antonio Manuel Aguilar Caro</p>
+        <!-- Botonera de acceso a redes sociales -->
+        <a href="https://www.facebook.com/antoniomanuelaguilarcaro/"><img src="images/iconos sociales/facebook.png"
+                alt="facebook" class="social-icons" width="25" height="25"></a>
+        <a href="https://twitter.com/aaguilarcaro"><img src="images/iconos sociales/twitter.png" alt="twitter"
+                class="social-icons" width="25" height="25"></a>
+        <a href="https://www.linkedin.com/in/antonio-manuel-aguilar-caro/"><img
+                src="images/iconos sociales/linkedin.png" alt="linkedin" class="social-icons" width="25" height="25"></a>
+    </footer>
+
+    <script>
+        function mostrarLista() {
+            
+            fetch('servidorLista.php').then(function(response) { 
+                // Convertimos a JSON
+                return response.json(); // Este response.json() que devolvemos...
+            }).then(function(listaTareas) {
+                var n = listaTareas.length; //obtienes la longitud
+                // Variable que usaremos para ir acumulando las distintas descripciones
+                var acumulacion = "";    
+                for(var i = 0;i<n;i++){
+                    // Esta variable contiene lo que queremos mostrar dentro de la lista
+                    var listadoDescripciones = "<li>"+listaTareas[i].descripcion+"</li>";
+                    // Acumulamos los distintos campos de descripcion para mostrarlos todos despues
+                    acumulacion += listadoDescripciones;
+                }
+                // Imprimimos las distintas descripciones de las tareas que tengamos
+                document.getElementById("listaTareas").innerHTML = acumulacion;
+            });
+        }
+        // Llamamos a la funcion mostrarLista()
+        mostrarLista();
+
+    </script>
+</body>
+</html>
