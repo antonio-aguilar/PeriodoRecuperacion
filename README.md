@@ -11,4 +11,6 @@ Ejercicios del Periodo de Recuperación de DWES (Desarrollo Web en Entorno Servi
 
 - Carpeta [ListaTareasUsuarios](https://github.com/antonio-aguilar/PeriodoRecuperacion/tree/main/ListaTareasUsuarios)
 
+- Carpeta [ListaTareaAJAX](https://github.com/antonio-aguilar/PeriodoRecuperacion/tree/master/ListaTareasAJAX)
+
 **Realizados por:** 💻 Antonio Manuel Aguilar Caro.
