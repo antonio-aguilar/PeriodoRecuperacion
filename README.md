@@ -13,4 +13,8 @@ Ejercicios del Periodo de Recuperación de DWES (Desarrollo Web en Entorno Servi
 
 - Carpeta [ListaTareaAJAX](https://github.com/antonio-aguilar/PeriodoRecuperacion/tree/master/ListaTareasAJAX)
 
+- Comprimido [glosario1_AntonioAguilar.zip](https://github.com/antonio-aguilar/PeriodoRecuperacion/blob/master/glosario1_AntonioAguilar.zip)
+
+- Comprimido [glosario_AntonioAguilar.zip](https://github.com/antonio-aguilar/PeriodoRecuperacion/blob/master/glosario_AntonioAguilar.zip)
+
 **Realizados por:** 💻 Antonio Manuel Aguilar Caro.
